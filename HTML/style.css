@@ -1,0 +1,72 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9c9c99;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  
+  padding: 10px 20px 20px;
+  background: #000000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 40px;
+  width: 70%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 0px;
+  border-radius: 0%;
+  outline: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 0px;
+  border-radius: 0px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator[data-value="AC"] {
+  color: #000000;
+  background-color: #00A693;
+  width: 70px;
+  height: 42px;
+}
+.operator[data-value="+"] {
+  background-color: #737370;
+}
+.operator[data-value="-"] {
+  background-color: #737370;
+}
+.operator[data-value="%"] {
+  background-color: #737370;
+}
+.operator[data-value="*"] {
+  background-color: #737370;
+}
