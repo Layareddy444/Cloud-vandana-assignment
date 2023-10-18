@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2><center>Survey Form</center></h2>
+    
+    <table>
+        
+        <form id="surveyForm" method="post" onsubmit="displaySelectedValues(); return false;">
+
+    <tr>
+        <td><label for="firstName">First Name:</label></td>
+        <td><input type="text" id="firstName" name="firstName" required></td>
+     </tr>
+        
+<tr>
+        <td><label for="lastName">Last Name:</label></td>
+        <td><input type="text" id="lastName" name="lastName" required></td>
+</tr>
+
+<tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name ="dob" required></td>
+</tr>
+
+<tr>
+    
+         <td><label for="country">Country:</label></td>
+         <td><select id="country" name="country" required>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+             <option value="India">India</option> 
+             <option value="Germany">Germany</option> 
+             <option value="Japan">Japan</option> 
+             <option value="Afghanisthan">Afghanisthan</option>
+             <option value="Belgium">Belgium</option> 
+             <option value="Australia">Australia</option> 
+             <option value="Bangladesh">Bangladesh</option>
+            
+        </select></td>
+</tr>
+
+<tr>
+        <td><label>Gender:</label></td>
+        <td><input type="checkbox" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="Female">
+        <label for="female">Female</label></td>
+</tr>
+
+<tr>
+        <td><label for="profession">Profession:</label></td>
+        <td><input type="text" id="profession" name="profession" required></td>
+</tr>
+
+<tr>
+        <td><label for="email">Email id:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+</tr>
+
+<tr>
+        <td><label for="mobile">Mobile Number:</label></td>
+       <td> <input type="tel" id="mobile" name="mobile" required></td>
+</tr>
+
+        <!-- Submit Button -->
+<tr>        
+        <td><input type="submit" value="Submit" class="submit-button" onclick="displaySelectedValues();"></td>
+
+        <!-- Reset Button -->
+        <td><input type="reset" value="Reset"></td>
+
+    </form>
+    </table>
+    <script src="script.js"></script>
+
+</body>
+</html>
